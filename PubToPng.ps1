@@ -10,10 +10,11 @@ Disclaimer: This script is provided for educational and informational purposes o
 
     Each Flyer.pub gets a Flyer_pages\ folder holding Page1.png, Page2.png, ... Files
     already in that folder with the same names are replaced. (The folder is not Flyer\,
-    which is where PublisherPubToHtmlForPptx.ps1 writes its export.)
+    which is where PublisherToPPTX's stage 1 script writes its export.)
 
-    Stand-alone: it needs only Publisher, not the rest of this repository. It is handy for
-    checking a converted .pptx against the original publication page by page.
+    Stand-alone: it needs only Publisher. It is handy for checking a .pptx converted by
+    PublisherToPPTX (github.com/Dave3Young/PublisherToPPTX) against the original
+    publication page by page.
 
     Requires Microsoft Publisher installed. Works in Windows PowerShell 5.1 and PowerShell 7.
 

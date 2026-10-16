@@ -11,8 +11,9 @@ Disclaimer: This script is provided for educational and informational purposes o
     Each Deck.pptx gets a Deck\ folder holding Slide1.PNG, Slide2.PNG, ... named as
     PowerPoint names them. Files already in that folder with the same names are replaced.
 
-    Stand-alone: it needs only PowerPoint, not the rest of this repository. It is handy for
-    checking a converted .pptx against the original publication page by page.
+    Stand-alone: it needs only PowerPoint. It is handy for checking a .pptx converted by
+    PublisherToPPTX (github.com/Dave3Young/PublisherToPPTX) against the original
+    publication page by page.
 
     Requires Microsoft PowerPoint installed. Works in Windows PowerShell 5.1 and PowerShell 7.
 
