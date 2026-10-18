@@ -13,6 +13,25 @@ slides are the same size, so the two can be compared pixel for pixel, for instan
 `.pptx` made by [PublisherToPPTX](https://github.com/Dave3Young/PublisherToPPTX) against the
 original publication.
 
+## Unblock the scripts after downloading
+Windows marks files downloaded from the internet as blocked, and PowerShell may then refuse to
+run them with an error such as "is not digitally signed" or "cannot be loaded". Before running
+a script for the first time, unblock it:
+1. In File Explorer, right-click the script and choose **Properties**.
+2. On the **General** tab, tick **Unblock**, then click **Apply** and **OK**.
+
+![The Unblock checkbox on the General tab of a file's Properties](images/unblock.png)
+
+Or unblock every script in the folder at once from PowerShell:
+
+```powershell
+Get-ChildItem *.ps1 | Unblock-File
+```
+
+If you downloaded the repository as a ZIP, unblock the ZIP the same way before extracting it,
+and every file inside comes out unblocked. If there is no **Unblock** checkbox, the file is not
+blocked.
+
 ## Requirements
 - Windows 10/11 with Windows PowerShell 5.1 or PowerShell 7.
 - Microsoft PowerPoint installed for `PptxToPng.ps1`, Microsoft Publisher for `PubToPng.ps1`.
